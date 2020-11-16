@@ -1,4 +1,4 @@
-# SBRC2020-Minicurso3-Demo2-Exp1
+# OpenAirInterface-with-Free5GC
 
 ## Expected result
 After installation, nine containers are available, two of then running User Equipment (UE) and Evolved Node B (eNB) and the others running the elements of 5ht Generation Core Network. As illustrated in the figure below, UE can establish an internet connection, provided through combining functionality of all components. This environment is useful for studies relatated to RAN combined with the 5ht Generation Core Network.
@@ -30,7 +30,7 @@ sudo apt -y install git
 
 Clone this repository:
 ```
-git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo2-Exp1.git
+git clone https://github.com/ciromacedo/OpenAirInterface-with-Free5GC.git
 ```
 
 Install Ansible:
@@ -45,7 +45,7 @@ Run ```ifconfig``` and get the name of **internet network interface**, like as i
 
 Run the following Ansible playbook (password for sudo is required):
 ```
-cd NetSoft2020-Tutorial4-Demo2-Exp1 && ansible-playbook -K Demo2Exp1.yml  -e  "internet_network_interface=<< internet network interface name>>"
+cd OpenAirInterface-with-Free5GC && ansible-playbook -K Demo2Exp1.yml  -e  "internet_network_interface=<< internet network interface name>>"
 ```
 
 Check if the containers are up:
